@@ -1,0 +1,50 @@
+<!-- Why semantic tag?
+    - 정확한 내용 전달 
+    - 문서 구조를 정확히 나누어 표현 가능 -> 다양한 화면에서(모바일,pc,등) 표현하기 쉬움
+    - 필요한 내용 찾기 쉬움 -->
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "containter">
+        <!-- 헤더 영역 : 주로 맨 위쪽/왼쪽, (검색창, 사이트메뉴 삽입)-->
+        <header>
+            <div id = "logo">
+                <a href = "#"><h1>Logo</h1></a>
+            </div>
+            <!-- navigation 영역 : 다른 위치/다른 웹문서 연결하는 링크 생성  -->
+            <nav>
+                <ul id = "topMenu">
+                    <li><a href = "#"> menu#1 </a></li>
+                    <li><a href = "#"> menu#2 </a></li>
+                    <li><a href = "#"> menu#3 </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 본문 영역 -->
+        <main class="contents">
+            <section id="headling">
+                <h2> name </h2>
+            </section>
+            <section id = "activity">
+                <h2> activity</h2>
+            </section>
+        </main>
+
+        <!-- footer 영역 -->
+        <footer>
+            <section id = "bottonMenu">
+                <ul>
+                    <li><a href = "#"> introduction </a></li>
+                    <li><a href = "#"> rule </a></li>
+                    <li><a href = "#"> sitemap </a></li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
