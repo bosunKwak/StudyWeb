@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 예시 </title>
+</head>
+<body>
+    <h2> 상품 구성</h2>
+    <table>
+        <caption>> 선물용과 가정용 상품 구성</caption>
+
+        <!-- 각 열마다 스타일 속성 지정  -->
+        <colgroup>
+        <col style = "background-color: #eee;">
+        <!-- 2열에 특정 스타일 적용하지 않음 따라서, <col>만 적으면 됨 -->
+        <col> 
+        <!-- 3,4열 묶어서 스타일 지정 -->
+        <col sapn="2" style = "width: 150px;">
+        </colgroup>
+        <!-- 제목 행  -->
+        <thead>
+            <tr>
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 2행 1열, 2열, 3열, 4열 -->
+            <tr>
+                <td rowspan="2">선물용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+            <!-- 3행 1열, 2열, 3열, 4열 -->
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+            <!-- 4행 1열, 2열, 3열, 4열 -->
+            <tr>
+                <td rowspan="2">가정용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+            <!-- 5행 1열, 2열, 3열, 4열 -->
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
