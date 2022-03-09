@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .book{
+            list-style-type: none;
+            line-height: 2.0;
+        }
+    </style>
 </head>
 <body>
 
     <form action = "">
         <fieldset>
             <legend> User Information </legend>
-            <ul>
+            <ul class = "book">
                 <li>
                     <label for = "user-id"> 아이디</label>
                     <input type = "text" id = "user-id" size = "10" placeholder = "4~10자 사이" required autofocus>
@@ -53,7 +60,31 @@
         </fieldset>
         <fieldset>
             <legend> 기술 스택</legend>
-            <p><b> Programming language</b></p>
+            <ul class = "book">
+                <li>
+                    <b> Programming language</b>
+                    <br>
+                    <label><input type = "checkbox" value = "tech_py"> Python </label>
+                    <label><input type = "checkbox" value = "tech_java"> Java </label>
+                    <label><input type = "checkbox" value = "tech_c"> C  </label>
+                    <label><input type = "checkbox" value = "tech_cc"> C# </label>
+                    <label><input type = "checkbox" value = "tech_ccc"> C++ </label>
+                    <label><input type = "checkbox" value = "tech_swift"> Swift </label>
+                </li>
+
+
+                <li>
+                    <b> Database </b>
+                    <br>
+                    <label><input type = "checkbox" value = "db_mong"> MongoDB </label>
+                    <label><input type = "checkbox" value = "db_my"> MySQL </label>
+                    <label><input type = "checkbox" value = "db_ela"> ElasticSearch </label>
+                    <label><input type = "checkbox" value = "db_red"> Redis </label>
+                </li>
+
+            </ul>
+
+            <!-- <p><b> Programming language</b></p>
             <label><input type = "checkbox" value = "tech_py"> Python </label>
             <label><input type = "checkbox" value = "tech_java"> Java </label>
             <label><input type = "checkbox" value = "tech_c"> C  </label>
@@ -65,7 +96,7 @@
             <label><input type = "checkbox" value = "db_mong"> MongoDB </label>
             <label><input type = "checkbox" value = "db_my"> MySQL </label>
             <label><input type = "checkbox" value = "db_ela"> ElasticSearch </label>
-            <label><input type = "checkbox" value = "db_red"> Redis </label>
+            <label><input type = "checkbox" value = "db_red"> Redis </label> -->
 
         </fieldset>
 
