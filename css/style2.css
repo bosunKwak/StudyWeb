@@ -1,0 +1,11 @@
+#container{
+    width:500px;
+    margin: 10px auto;
+    padding: 10px;
+    border:1px solid #000
+}
+
+/* 태그 중앙 정렬 */
+h1,p  v {
+    text-align : center;
+}

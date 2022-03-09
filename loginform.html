@@ -2,22 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login </title>
+    <link rel = "stylesheet" href = "css/style2.css">
+
 </head>
 <body>
-    <form>
-        <fieldset>
-            <label for = "user-id"> 아이디(6자 이상) </label>
-            <input type = "text" id = "user-id" size = "10" autofocus>
+     <!-- 클래스 선택자 사용하기
+    <div>
+        <h1 class = "accent bg"> 로그인 </h1>
+    </div> -->
 
-            <label for = "user-pwd"> 비밀번호 </label>
-            <input type = "password" id = "user-pwd" size = "10">
+    
+    <!-- id 선택자 사용하기 -->
+    <div id = "container">
+        <h1> 로그인 </h1>
+        <form>
+            <fieldset>
+                <label for = "user-id"> 아이디 </label>
+                <input type = "text" id = "user-id" size = "10" autofocus>
 
-            <input type = "submit" value ="로그인">
-             <input type = "button" value = "회원가입하기" onclick = "window.open('signupform.html')">       
-        </fieldset>
-    </form>
+                <label for = "user-pwd"> 비밀번호 </label>
+                <input type = "password" id = "user-pwd" size = "10">
+
+                <br>
+                <input type = "submit" value ="로그인">
+                <input type = "button" value = "회원가입하기" onclick = "window.open('signupform.html')">       
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>

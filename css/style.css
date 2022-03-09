@@ -1,0 +1,16 @@
+/* h1{
+    padding : 10px;
+    background-color: #222;
+    color: #fff
+} */
+
+p{
+    font-style: italic;
+}
+.accent{
+    border: 1px solid #000;
+    padding: 5px;
+}
+.bg{
+    background-color: #ddd; 
+}
