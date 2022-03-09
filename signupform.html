@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "">
+        <filedset>
+            <legend> User Information </legend>
+            <ul>
+                <li>
+                    <label for = "user-id"> 아이디(6자 이상) </label>
+                    <input type = "text" id = "user-id" size = "10">
+                </li>
+                <li>
+                    <label for = "user-pwd"> 비밀번호 </label>
+                    <input type = "password" id = "user-pwd" >
+                </li>
+                <li>
+                    <label for = "user-pwd"> 비밀번호 확인</label>
+                    <input type = "password" id = "check-pwd" >
+                </li>
+                <li>
+                    <label for = "user-name"> 이름</label>
+                    <input type = "text" id = "user-name">
+                </li>
+                <li>
+                    <label><input type = "radio" name = "sex" value = "1"> 남 </label>
+                    <label><input type = "radio" name = "sex" value = "2"> 여 </label>
+                </li>
+                <li>
+                    <label for = "mail"> 이메일 주소 </label>
+                    <input type = "email" id = "mail">
+                </li>
+                <li>
+                    <label for = "phone"> 전화번호 </label>
+                    <input type = "tel" id = "phone">
+                </li>
+                <li>
+                    <label for = "blog"> blog 주소</label>
+                    <input type = "url" id = "blog">
+                </li>
+            </ul>
+        </filedset>
+        <filedset>
+            <legend> 기술 스택</legend>
+            <p><b> Programming language</b></p>
+            <label><input type = "checkbox" value = "tech_py"> Python </label>
+            <label><input type = "checkbox" value = "tech_java"> Java </label>
+            <label><input type = "checkbox" value = "tech_c"> C  </label>
+            <label><input type = "checkbox" value = "tech_cc"> C# </label>
+            <label><input type = "checkbox" value = "tech_ccc"> C++ </label>
+            <label><input type = "checkbox" value = "tech_swift"> Swift </label>
+
+            <p><b> Database </b></p>
+            <label><input type = "checkbox" value = "db_mong"> MongoDB </label>
+            <label><input type = "checkbox" value = "db_my"> MySQL </label>
+            <label><input type = "checkbox" value = "db_ela"> ElasticSearch </label>
+            <label><input type = "checkbox" value = "db_red"> Redis </label>
+
+        </filedset>
+
+        <div id = "buttons">
+            <input type ="submit" value = "가입하기">
+            <input type = "reset" value = "취소">
+        </div>
+    </form>
+</body>
+</html>
