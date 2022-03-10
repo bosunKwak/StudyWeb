@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자리 배치도 프로그램</title>
+</head>
+<body>
+    <h1> 자리배치도</h1>
+    <script>
+        var memNum = prompt("입장객 수 ");
+        var colNum = prompt("한줄에 앉을 사람 수 ");
+        var rowNum = parseInt(memNum/colNum);
+        if (memNum%colNum!=0)
+            rowNum += 1;
+        document.write("모두 "+ rowNum+"개의 줄이 필요합니다. ");
+    </script>
+
+</body>
+</html>
