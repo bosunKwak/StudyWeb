@@ -9,17 +9,18 @@
 
     <h1> 구구단 </h1>
     <script>
-        var i,j;
+        var i, j;
+        var n = prompt("(1~n) 구구단 , n의 값을 입력하세요");
 
-        for (i =1;i<10;i++){
+        // for (i =1;i<=n;i++){
+        for(i=1;i<10;i++){
             // css 적용
             document.write("<div>");
-
             document.write("<h3>"+i+"단</h3>")
             for(j=1;j<10;j++){
                 document.write(i + " X " + j + " = " + i*j +"<br>");
             }
-
+            if(i == n) break;
             document.write("</div>")
         }
         
