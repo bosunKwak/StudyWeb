@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자리 배치도 프로그램</title>
+    <style>
+        table,td{
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1> 자리배치도</h1>
+    <script>
+        var memNum = prompt("입장객 수 ");
+        var colNum = prompt("한줄에 앉을 사람 수 ");
+        var rowNum = parseInt(memNum/colNum);
+        if (memNum%colNum!=0)
+            rowNum += 1;
+        
+        document.write("<table>");
+        for(var i = 0;i<rowNum;i++){
+            document.write("<tr>");
+            for(var j =0;j<colNum;j++){
+                var seatNum = i*colNum+j;
+                if(seatNum>memNum) break;
+                document.write("<td>좌석 "+seatNum+" </td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>")
+    </script>
+
+</body>
+</html>
