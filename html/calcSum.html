@@ -6,16 +6,21 @@
 </head>
 <body>
     <script>
-        function calSum(n){
+        function calcSum(n){
             let sum = 0;
             // sum = 0;
             for(let i = 0;i<n+1;i++){
                 sum+=i;
             }
             console.log(sum);
+            document.write("1부터 "+n+"까지 더하면 <b>"+ sum+"</b>");
         }
-        calSum(10);
         // console.log(sum);
+
+        var userNum = prompt("얼마까지 더할까요?");
+        if(userNum != null){
+            calcSum(parseInt(userNum))
+        }
     </script>
 </body>
 </html>
